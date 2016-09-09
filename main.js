@@ -6,7 +6,7 @@ var PORT = 3000;
 app.database = {};
 
 app.all('/*', function(req, res, next) {
-  console.log(util.format('url: %s\n', req.url));
+  console.log(util.format('url: %s', req.url));
   next();
 });
 
